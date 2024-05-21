@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Warning</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: black;
+            color: red;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            flex-direction: column;
+        }
+        h1 {
+            font-size: 3em;
+            margin: 0;
+        }
+        p {
+            font-size: 1.5em;
+        }
+        .message {
+            font-size: 2em;
+            animation: blink 1s steps(5, start) infinite;
+        }
+        @keyframes blink {
+            to {
+                visibility: hidden;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>WARNING!</h1>
+    <p>HP Anda di hack/terkena virus!</p>
+    <p>Segera matikan HP dan hubungi teknisi.</p>
+    <script>
+        setTimeout(function() {
+            alert('Data pribadi Anda sedang ditransfer ke hacker.');
+        }, 3000);
+    </script>
+</body>
+</html>
